@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="MovieLibrary.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $.get("http://localhost:50983/api/Movie", function(data, status){
+      alert("Data: " + data + "\nStatus: " + status);
+    });
+  });
+});
+</script>
+</head>
+<body>
+
+<button>All Movies</button>
+
+</body>
+</html>

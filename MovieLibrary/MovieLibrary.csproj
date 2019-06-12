@@ -207,14 +207,14 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="Controllers\MovieController.cs" />
     <Compile Include="CORS\AllowCrossSiteAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201906111924268_newthing.cs" />
-    <Compile Include="Migrations\201906111924268_newthing.Designer.cs">
-      <DependentUpon>201906111924268_newthing.cs</DependentUpon>
+    <Compile Include="Migrations\201906121245063_seeddb.cs" />
+    <Compile Include="Migrations\201906121245063_seeddb.Designer.cs">
+      <DependentUpon>201906121245063_seeddb.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
@@ -316,8 +316,8 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201906111924268_newthing.resx">
-      <DependentUpon>201906111924268_newthing.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201906121245063_seeddb.resx">
+      <DependentUpon>201906121245063_seeddb.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

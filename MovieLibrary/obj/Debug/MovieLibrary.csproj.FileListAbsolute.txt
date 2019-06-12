@@ -111,5 +111,5 @@ C:\Users\hlhuynh14\Desktop\devCodeCamp Projects\MovieLibrary\MovieLibrary\obj\De
 C:\Users\hlhuynh14\Desktop\devCodeCamp Projects\MovieLibrary\MovieLibrary\obj\Debug\MovieLibrary.csproj.CopyComplete
 C:\Users\hlhuynh14\Desktop\devCodeCamp Projects\MovieLibrary\MovieLibrary\obj\Debug\MovieLibrary.dll
 C:\Users\hlhuynh14\Desktop\devCodeCamp Projects\MovieLibrary\MovieLibrary\obj\Debug\MovieLibrary.pdb
-C:\Users\hlhuynh14\Desktop\devCodeCamp Projects\MovieLibrary\MovieLibrary\obj\Debug\MovieLibrary.Migrations.newthing.resources
+C:\Users\hlhuynh14\Desktop\devCodeCamp Projects\MovieLibrary\MovieLibrary\obj\Debug\MovieLibrary.Migrations.seeddb.resources
 C:\Users\hlhuynh14\Desktop\devCodeCamp Projects\MovieLibrary\MovieLibrary\obj\Debug\MovieLibrary.csproj.GenerateResource.cache
