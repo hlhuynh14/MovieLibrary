@@ -2,19 +2,21 @@
 <html>
 <head>
 <script src="MovieLibrary.js"></script>
-<script>
-$(document).ready(function(){
-  $("button").click(function(){
-    $.get("http://localhost:50983/api/Movie", function(data, status){
-      alert("Data: " + data + "\nStatus: " + status);
-    });
-  });
-});
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 </script>
 </head>
 <body>
+        <button onclick="SearchAll()">All Movies</button>
 
-<button>All Movies</button>
+    <table id="Table">
+            <tr>
+              <th>Title</th>
+              <th>Genre</th> 
+              <th>Director</th>
+            </tr>
+    
+          </table>
+
 
 </body>
 </html>
