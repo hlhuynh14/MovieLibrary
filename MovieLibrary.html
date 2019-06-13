@@ -6,8 +6,36 @@
 </script>
 </head>
 <body>
-        <button onclick="SearchAll()">All Movies</button>
 
+  
+
+
+       
+          
+          <p>
+             <label>Search By</label>
+             <select id = "myList">
+               <option value = "title">Title</option>
+               <option value = "genre">Genre</option>
+               <option value = "director">Director</option>
+
+             </select>
+            
+          </p>
+          
+     
+    </form>
+    <p>
+            <label>Search</label>
+            <input type = "text"
+                   id = "search"
+                   value = "" />
+          </p>
+    <button onclick="SearchBy()">Search Movies</button>
+
+<br>
+<br>
+<br>
     <table id="Table">
             <tr>
               <th>Title</th>
@@ -16,6 +44,35 @@
             </tr>
     
           </table>
+          <br>
+<br>
+<br>
+          <form  id="UpdateMovie">
+                <label>Title</label>
+                <input type="text" name="title" />
+                <label>Genre</label>
+                <input type="text" name="genre" />
+                <label>Director</label>
+                <input type="text" name="directorName" />
+
+                <button onclick="UpdateMovie()">Update Movie</button>
+            <div id="add-movie"></div>
+            </form>
+            <br>
+            <br> 
+            <br>
+            <form  id="NewMovie">
+                    <label>Title</label>
+                    <input type="text" name="title" />
+                    <label>Genre</label>
+                    <input type="text" name="genre" />
+                    <label>Director</label>
+                    <input type="text" name="directorName" />
+    
+                    <button onclick="AddMovie()">Add Movie</button>
+                <div id="add-movie"></div>
+                </form>
+
 
 
 </body>

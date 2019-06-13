@@ -27,7 +27,7 @@ namespace MovieLibrary.Controllers
         }
         [HttpPost]
         // POST api/Movie
-        public void Post([FromBody] Movie movie)
+        public void Post( Movie movie)
         {
             
             context.Movies.Add(movie);
