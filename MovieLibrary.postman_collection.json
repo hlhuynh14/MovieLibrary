@@ -1,0 +1,33 @@
+{
+	"info": {
+		"_postman_id": "4a6e56de-b7d8-40d9-ae87-a72b4224a5c2",
+		"name": "MovieLibrary",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:50983/api/Movie",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:50983/api/Movie",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50983",
+					"path": [
+						"api",
+						"Movie"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -113,3 +113,6 @@ C:\Users\hlhuynh14\Desktop\devCodeCamp Projects\MovieLibrary\MovieLibrary\obj\De
 C:\Users\hlhuynh14\Desktop\devCodeCamp Projects\MovieLibrary\MovieLibrary\obj\Debug\MovieLibrary.pdb
 C:\Users\hlhuynh14\Desktop\devCodeCamp Projects\MovieLibrary\MovieLibrary\obj\Debug\MovieLibrary.Migrations.seeddb.resources
 C:\Users\hlhuynh14\Desktop\devCodeCamp Projects\MovieLibrary\MovieLibrary\obj\Debug\MovieLibrary.csproj.GenerateResource.cache
+C:\Users\hlhuynh14\Desktop\devCodeCamp Projects\MovieLibrary\MovieLibrary\bin\System.Web.Cors.dll
+C:\Users\hlhuynh14\Desktop\devCodeCamp Projects\MovieLibrary\MovieLibrary\bin\System.Web.Http.Cors.dll
+C:\Users\hlhuynh14\Desktop\devCodeCamp Projects\MovieLibrary\MovieLibrary\bin\System.Web.Http.Cors.xml

@@ -11,10 +11,10 @@ function SearchBy()
         case 'director':
             SearchByDirectorName(searchQuery)
             break;
-        case 'title':
+        case 'title1':
             SearchByTitle(searchQuery)
-            break;
-        case 'genre':
+            break; 
+        case 'genre1':
             SearchByGenre(searchQuery)
             break; 
         case null:
@@ -64,7 +64,7 @@ function SearchAll()
     $.get( "http://localhost:50983/api/Movie", function( data ) {
         $("#Table").empty();
         $.each(data, function(key,value ) {
-            $("#Table").append(`<tr><td>${value.Title} </td><td>${value.Genre} </td><td>${value.DirectorName}</td><td><button onclick="UpdateMovie(${value})">Update Movie</button></td></tr>`)            
+            $("#Table").append(`<tr><td>${value.Title} </td><td>${value.Genre} </td><td>${value.DirectorName}</td><td><button onclick="UpdateMovie(${value.id})">Update Movie</button></td></tr>`)            
               }, "json" );
 })   
 }
@@ -84,13 +84,26 @@ function AddMovie(){
         }
     }); 
 }
-function UpdateMovie(){
+function UpdateMovie(id){
+    
+    $.get( "http://localhost:50983/api/Movie", function( data ) {
+
+        let value1 = data.filter(function(value){
+            return value.id === id;    
+        })
+    $("#title1")[0].value = value1[0].Title;
+    $("#genre1")[0].value = value1[0].Genre;
+    $("#directorName1")[0].value = value1[0].DirectorName;
+    $("#updatebutton").attr('onClick', 'PutUpdatedMovie('+ id +')')
+})}
+function PutUpdatedMovie(id){
+
     $.ajax({
-        url: "http://localhost:50983/api/Movie",
+        url: "http://localhost:50983/api/Movie/" +id,
         dataType: 'text',
-        type: 'POST',
+        type: 'PUT',
         contentType: 'application/x-www-form-urlencoded',
-        data: $('#NewMovie').serialize(),
+        data: $('#UpdateMovie').serialize(),
         success: function( data, textStatus, jQxhr ){            
             $('#response pre').html( data );
         },

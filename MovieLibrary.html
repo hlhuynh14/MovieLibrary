@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+        <link rel="stylesheet" href="Style.css">
 </head>
+<style>
+        .content {
+          max-width: 900px;
+          margin: auto;
+        }
+
+        </style>
 <body>
 
-  
+        <div class="content">
 
           
           <p>
              <label>Search By</label>
              <select id = "myList">
-               <option value = "title">Title</option>
-               <option value = "genre">Genre</option>
+               <option value = "title1">Title</option>
+               <option value = "genre1">Genre</option>
                <option value = "director">Director</option>
 
              </select>
-            
-          </p>
-          
-     
-    </form>
+
+    
     <p>
             <label>Search</label>
             <input type = "text"
@@ -28,10 +32,9 @@
                    value = "" />
           </p>
     <button onclick="SearchBy()">Search Movies</button>
+</p>
 
-<br>
-<br>
-<br>
+
     <table id="Table">
             <tr>
               <th>Title</th>
@@ -46,15 +49,19 @@
           <br>
 <br>
 <br>
+<br>
+<br>
+<br>
           <form  id="UpdateMovie">
                 <label>Title</label>
-                <input type="text" name="title" />
+                <input type="text" id="title1" />
                 <label>Genre</label>
-                <input type="text" name="genre" />
+                <input type="text" id="genre1" />
                 <label>Director</label>
-                <input type="text" name="directorName" />
+                <input type="text" id="directorName1" />
+               
 
-                <button onclick="UpdateMovie()">Update Movie</button>
+                <button id="updatebutton">Update Movie</button>
             <div id="add-movie"></div>
             </form>
             <br>
@@ -75,5 +82,6 @@
 
                 <script src="MovieLibrary.js"></script>
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+            </div>
 </body>
 </html>
